@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            background-color: #6200ee;
+            color: white;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #6200ee;
+        }
+
+        #logo {
+            margin: 20px auto;
+            max-width: 150px; /* Tamaño del logo */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #6200ee;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #4500b3;
+        }
+
+        #language-switch {
+            margin: 20px 0;
+            background-color: #f4f4f4;
+        }
+
+        #language-switch a {
+            color: #6200ee;
+            background-color: white;
+            border: 2px solid #6200ee;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #language-switch a:hover {
+            background-color: #6200ee;
+            color: white;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Productos</h1>
+    <!-- Logo -->
+    <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
+    
+    <!-- Categoría: Iluminación Interior -->
+    <h2>Iluminación Interior</h2>
+    <ul>
+        <li><a href="./interior-lighting/slattedlampblack/">Lámpara Enrejada</a></li>
+    </ul>
+
+    <!-- Botón para cambiar al idioma inglés -->
+    <div id="language-switch">
+        <a href="../en/">Switch to English</a>
+    </div>
+
+    <footer>
+        <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
