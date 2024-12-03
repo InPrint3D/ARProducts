@@ -25,58 +25,34 @@
             margin: 0;
         }
 
-        h2 {
-            margin-top: 30px;
-            color: #6200ee;
-        }
-
         #logo {
             margin: 20px auto;
             max-width: 150px; /* Tamaño del logo */
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
+        .category-buttons {
             margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
         }
 
-        a {
+        .category-buttons a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
-        a:hover {
+        .category-buttons a:hover {
             background-color: #4500b3;
-        }
-
-        #language-switch {
-            margin: 20px 0;
-            background-color: #f4f4f4;
-        }
-
-        #language-switch a {
-            color: #6200ee;
-            background-color: white;
-            border: 2px solid #6200ee;
-            padding: 10px 15px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        #language-switch a:hover {
-            background-color: #6200ee;
-            color: white;
+            transform: scale(1.05);
         }
 
         footer {
@@ -94,15 +70,11 @@
     <!-- Logo -->
     <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
     
-    <!-- Categoría: Iluminación Interior -->
-    <h2>Iluminación Interior</h2>
-    <ul>
-        <li><a href="./interior-lighting/slattedlampblack/">Lámpara Enrejada</a></li>
-    </ul>
-
-    <!-- Botón para cambiar al idioma inglés -->
-    <div id="language-switch">
-        <a href="../en/">Switch to English</a>
+    <!-- Botones para Categorías -->
+    <div class="category-buttons">
+        <a href="./interior-lighting/">Iluminación Interior</a>
+        <a href="./seasonal/">De Temporada</a>
+        <a href="./minimalist-decor/">Decoración Minimalista</a>
     </div>
 
     <footer>
