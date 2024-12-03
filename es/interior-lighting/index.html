@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iluminación Interior</title>
     <style>
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,19 +14,33 @@
             color: #333;
             text-align: center;
         }
-        h1 {
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: #6200ee;
             color: white;
-            padding: 20px;
-            margin: 0;
+            padding: 10px 20px;
         }
+
+        header img {
+            max-width: 50px; /* Tamaño más pequeño del logo */
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin: 20px 0;
         }
+
         a {
             text-decoration: none;
             color: white;
@@ -34,16 +49,43 @@
             border-radius: 5px;
             font-size: 18px;
         }
+
         a:hover {
             background-color: #4500b3;
+        }
+
+        #back-button {
+            display: inline-block;
+            margin: 20px 0;
+            color: white;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        #back-button:hover {
+            background-color: #6200ee;
         }
     </style>
 </head>
 <body>
-    <h1>Iluminación Interior</h1>
+    <!-- Encabezado con logo -->
+    <header>
+        <a href="../index.html">
+            <img src="../menu/logo.png" alt="Logo de la empresa">
+        </a>
+        <span>Iluminación Interior</span>
+    </header>
+
+    <h1>Productos de Iluminación Interior</h1>
     <ul>
         <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
         <!-- Agrega más productos aquí si es necesario -->
     </ul>
+
+    <!-- Botón para regresar al menú principal -->
+    <a id="back-button" href="../">Regresar al Catálogo</a>
 </body>
 </html>
