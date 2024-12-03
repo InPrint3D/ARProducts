@@ -55,6 +55,27 @@
             transform: scale(1.05);
         }
 
+        #language-switch {
+            margin: 20px 0;
+            background-color: #f4f4f4;
+        }
+
+        #language-switch a {
+            color: #6200ee;
+            background-color: white;
+            border: 2px solid #6200ee;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #language-switch a:hover {
+            background-color: #6200ee;
+            color: white;
+        }
+
         footer {
             padding: 10px;
             background-color: #333;
@@ -68,11 +89,18 @@
 <body>
     <h1>Catálogo de Productos</h1>
     <!-- Logo -->
-    <img id="logo" src="../menu/logo.png" alt="Logo de la empresa">
+    <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
     
     <!-- Botones para Categorías -->
     <div class="category-buttons">
         <a href="./interior-lighting/">Iluminación Interior</a>
+        <a href="./seasonal/">De Temporada</a>
+        <a href="./minimalist-decor/">Decoración Minimalista</a>
+    </div>
+
+    <!-- Botón para Cambiar de Idioma -->
+    <div id="language-switch">
+        <a href="../en/">Switch to English</a>
     </div>
 
     <footer>
