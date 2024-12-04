@@ -12,7 +12,6 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
         }
 
         header {
@@ -22,30 +21,64 @@
             background-color: #6200ee;
             color: white;
             padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         header img {
-            max-width: 50px; /* Tamaño más pequeño del logo */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white; /* Fondo blanco circular */
+            padding: 5px;
         }
 
         header h1 {
             margin: 0;
-            font-size: 20px;
             flex: 1;
-            text-align: left;
-            padding-left: 10px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff5722; /* Color distintivo */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #e64a19;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
 
         li {
             margin: 20px 0;
         }
 
-        a {
+        ul a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
@@ -55,47 +88,40 @@
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        a:hover {
+        ul a:hover {
             background-color: #4500b3;
             transform: scale(1.05);
-        }
-
-        .buttons {
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
         }
 
         footer {
             padding: 10px;
             background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado con logo y título -->
+    <!-- Encabezado con logo y título centrado -->
     <header>
         <img src="../menu/logo.png" alt="Logo de la empresa">
         <h1>Iluminación Interior</h1>
     </header>
 
-    <!-- Productos -->
-    <ul>
-        <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
-        <!-- Agrega más productos aquí si es necesario -->
-    </ul>
-
-    <!-- Botones de Navegación -->
+    <!-- Botones de navegación arriba -->
     <div class="buttons">
         <a href="../">Menú Principal</a>
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
+    <!-- Productos -->
+    <h2>Productos</h2>
+    <ul>
+        <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
+        <!-- Agrega más productos aquí si es necesario -->
+    </ul>
+
+    <!-- Pie de página -->
     <footer>
         <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
     </footer>
