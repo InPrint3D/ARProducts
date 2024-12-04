@@ -28,8 +28,12 @@
             max-width: 50px; /* Tamaño más pequeño del logo */
         }
 
-        h1 {
-            margin: 20px 0;
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            flex: 1;
+            text-align: left;
+            padding-left: 10px;
         }
 
         ul {
@@ -48,44 +52,52 @@
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         a:hover {
             background-color: #4500b3;
+            transform: scale(1.05);
         }
 
-        #back-button {
-            display: inline-block;
+        .buttons {
             margin: 20px 0;
-            color: white;
-            background-color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        #back-button:hover {
-            background-color: #6200ee;
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado con logo -->
+    <!-- Encabezado con logo y título -->
     <header>
-        <a href="../index.html">
-            <img src="../menu/logo.png" alt="Logo de la empresa">
-        </a>
-        <span>Iluminación Interior</span>
+        <img src="../menu/logo.png" alt="Logo de la empresa">
+        <h1>Iluminación Interior</h1>
     </header>
 
-    <h1>Productos de Iluminación Interior</h1>
+    <!-- Productos -->
     <ul>
         <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
         <!-- Agrega más productos aquí si es necesario -->
     </ul>
 
-    <!-- Botón para regresar al menú principal -->
-    <a id="back-button" href="../">Regresar al Catálogo</a>
+    <!-- Botones de Navegación -->
+    <div class="buttons">
+        <a href="../">Menú Principal</a>
+        <a href="javascript:history.back()">Atrás</a>
+    </div>
+
+    <footer>
+        <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
