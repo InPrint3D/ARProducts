@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Temporada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #6200ee;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            flex: 1;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff5722;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #e64a19;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: white;
+            background-color: #6200ee;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        ul a:hover {
+            background-color: #4500b3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="../menu/logo.png" alt="Logo de la empresa">
+        <h1>De Temporada</h1>
+    </header>
+
+    <!-- Botones de Navegación -->
+    <div class="buttons">
+        <a href="../">Menú Principal</a>
+        <a href="javascript:history.back()">Atrás</a>
+    </div>
+
+    <!-- Productos -->
+    <h2>Productos</h2>
+    <ul>
+        <li><a href="./wavy-tree/">Árbol Ondulado</a></li>
+        <li><a href="./santa-claus-statue/">Estatua de Santa Claus</a></li>
+        <li><a href="./christmas-ornaments/">Esferas Navideñas</a></li>
+    </ul>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
