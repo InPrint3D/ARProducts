@@ -85,12 +85,14 @@
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
         }
 
+        /* 👇 Efecto hover solo para los botones de productos */
         ul a:hover {
             background-color: #4500b3;
-            transform: scale(1.05);
+            transform: scale(1.1); /* Aumentar el tamaño del botón */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(98, 0, 238, 0.6); /* Sombra y glow */
         }
 
         footer {
