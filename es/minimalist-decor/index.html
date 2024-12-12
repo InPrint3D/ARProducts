@@ -74,21 +74,26 @@
         }
 
         li {
-            margin: 30px 0; /* Espaciado entre productos */
+            margin: 10px 0; /* Espaciado entre los productos */
         }
 
         ul a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
-            padding: 10px 20px;
+            padding: 10px 20px; /* Ajuste de padding del botón */
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s;
+            width: 200px; /* Ancho fijo del botón */
+            display: inline-block; /* Asegura que el ancho se respete */
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
+        /* Efecto hover SOLO para los botones de productos */
         ul a:hover {
             background-color: #4500b3;
+            transform: scale(1.05); /* Agranda el botón un 5% */
         }
 
         footer {
