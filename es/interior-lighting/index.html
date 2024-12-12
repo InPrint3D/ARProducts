@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Productos</title>
+    <title>Iluminación Interior</title>
     <style>
         /* Estilos generales */
         body {
@@ -12,100 +12,116 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
-        h1 {
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: #6200ee;
             color: white;
-            padding: 20px 0;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white; /* Fondo blanco circular */
+            padding: 5px;
+        }
+
+        header h1 {
             margin: 0;
+            flex: 1;
+            text-align: center;
+            font-size: 22px;
         }
 
-        #logo {
-            margin: 20px auto;
-            max-width: 150px; /* Tamaño del logo */
-        }
-
-        .category-buttons {
-            margin: 20px 0;
+        .buttons {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             gap: 10px;
-            align-items: center;
+            background-color: #333;
+            padding: 10px 0;
         }
 
-        .category-buttons a {
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff5722; /* Color distintivo */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #e64a19;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 30px 0; /* Espaciado más amplio entre los productos */
+        }
+
+        ul a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
-            width: 200px;
-            text-align: center;
-            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
-        .category-buttons a:hover {
+        ul a:hover {
             background-color: #4500b3;
-            transform: translateY(-5px); /* Desplaza el botón hacia arriba */
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar sensación de elevación */
-        }
-
-        #language-switch {
-            margin: 20px 0;
-            background-color: #f4f4f4;
-        }
-
-        #language-switch a {
-            color: #6200ee;
-            background-color: white;
-            border: 2px solid #6200ee;
-            padding: 10px 15px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
-        }
-
-        #language-switch a:hover {
-            background-color: #6200ee;
-            color: white;
-            transform: translateY(-5px); /* Desplaza el botón hacia arriba */
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar sensación de elevación */
+            transform: scale(1.05);
         }
 
         footer {
             padding: 10px;
             background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Catálogo de Productos</h1>
-    <!-- Logo -->
-    <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
-    
-    <!-- Botones para Categorías -->
-    <div class="category-buttons">
-        <a href="./interior-lighting/">Iluminación Interior</a>
-        <a href="./seasonal/">De Temporada</a>
-        <a href="./minimalist-decor/">Decoración Minimalista</a>
+    <!-- Encabezado con logo y título centrado -->
+    <header>
+        <img src="../menu/logo.png" alt="Logo de la empresa">
+        <h1>Iluminación Interior</h1>
+    </header>
+
+    <!-- Botones de navegación arriba -->
+    <div class="buttons">
+        <a href="../">Menú Principal</a>
+        <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Botón para Cambiar de Idioma -->
-    <div id="language-switch">
-        <a href="../en/">Switch to English</a>
-    </div>
+    <!-- Productos -->
+    <h2>Productos</h2>
+    <ul>
+        <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
+        <li><a href="./hexlampblack/">Lámpara Hexagonal Negra</a></li> <!-- Nuevo producto con título en español -->
+    </ul>
 
+    <!-- Pie de página -->
     <footer>
         <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
     </footer>
