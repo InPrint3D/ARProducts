@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos</title>
     <style>
-        /* Estructura de la página */
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,23 +14,31 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Asegura que la página ocupe toda la pantalla */
+            min-height: 100vh;
         }
 
-        h1 {
+        header {
             background-color: #6200ee;
             color: white;
             padding: 20px 0;
+            display: flex;
+            flex-direction: column; /* Alinea logo y título en columna */
+            align-items: center; /* Centra horizontalmente */
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px; /* Espacio entre logo y título */
+        }
+
+        header h1 {
             margin: 0;
-        }
-
-        #logo {
-            margin: 20px auto;
-            max-width: 150px; /* Tamaño del logo */
-        }
-
-        .content {
-            flex: 1; /* Hace que esta sección ocupe todo el espacio disponible */
+            font-size: 24px;
         }
 
         .category-buttons {
@@ -59,10 +67,10 @@
         }
 
         #language-switch {
-            margin-top: auto; /* Empuja el botón hacia el fondo */
+            margin-top: auto;
             background-color: #f4f4f4;
             text-align: center;
-            padding-bottom: 20px; /* Espacio adicional antes del footer */
+            padding-bottom: 20px;
         }
 
         #language-switch a {
@@ -86,24 +94,22 @@
             background-color: #333;
             color: white;
             text-align: center;
-            margin-top: auto; /* Empuja el footer hacia el fondo */
+            margin-top: auto; 
         }
     </style>
 </head>
 <body>
-    <h1>Catálogo de Productos</h1>
-    
-    <!-- Logo -->
-    <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
+    <!-- Encabezado -->
+    <header>
+        <img src="./menu/logo.png" alt="Logo de la empresa">
+        <h1>Catálogo de Productos</h1>
+    </header>
 
-    <!-- Contenido Principal -->
-    <div class="content">
-        <!-- Botones para Categorías -->
-        <div class="category-buttons">
-            <a href="./interior-lighting/">Iluminación Interior</a>
-            <a href="./seasonal/">De Temporada</a>
-            <a href="./minimalist-decor/">Decoración Minimalista</a>
-        </div>
+    <!-- Botones para Categorías -->
+    <div class="category-buttons">
+        <a href="./interior-lighting/">Iluminación Interior</a>
+        <a href="./seasonal/">De Temporada</a>
+        <a href="./minimalist-decor/">Decoración Minimalista</a>
     </div>
 
     <!-- Botón para Cambiar de Idioma -->
