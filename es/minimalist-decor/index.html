@@ -67,31 +67,28 @@
             margin: 20px 0;
         }
 
-        ul {
+        .category-buttons {
             list-style: none;
             padding: 0;
             text-align: center;
         }
 
-        li {
-            margin: 10px 0; /* Espaciado entre los productos */
-        }
-
-        ul a {
+        .category-buttons a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
-            padding: 10px 20px; /* Ajuste de padding del botón */
+            padding: 15px 25px;
             border-radius: 5px;
             font-size: 18px;
-            width: 200px; /* Ancho fijo del botón */
-            display: inline-block; /* Asegura que el ancho se respete */
+            width: 220px;
+            display: inline-block;
+            margin: 10px 0;
             text-align: center;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        /* Efecto hover SOLO para los botones de productos */
-        ul a:hover {
+        /* Efecto hover para los botones de categoría */
+        .category-buttons a:hover {
             background-color: #4500b3;
             transform: scale(1.05); /* Agranda el botón un 5% */
         }
@@ -117,12 +114,12 @@
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Productos -->
-    <h2>Productos</h2>
-    <ul>
-        <li><a href="./skull/">Calavera Minimalista</a></li>
-        <!-- Agrega más productos aquí -->
-    </ul>
+    <!-- Subcategorías -->
+    <h2>Subcategorías</h2>
+    <div class="category-buttons">
+        <a href="./ornaments/">Adornos Minimalistas</a>
+        <a href="./planters/">Jardinería Minimalista</a>
+    </div>
 
     <!-- Pie de página -->
     <footer>
