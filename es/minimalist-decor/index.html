@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoración Minimalista</title>
     <style>
+        /* Estilo General */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que la página ocupe toda la pantalla */
         }
 
         header {
@@ -20,9 +24,6 @@
             background-color: #6200ee;
             color: white;
             padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         header img {
@@ -62,12 +63,21 @@
             background-color: #e64a19;
         }
 
+        .content {
+            flex: 1; /* Hace que esta parte ocupe el espacio disponible */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Alinea el contenido verticalmente */
+            align-items: center;
+            text-align: center;
+        }
+
         .category-buttons {
-            margin-top: 20px;
             display: flex;
             flex-direction: column; /* Alineación vertical */
             align-items: center;
             gap: 10px; /* Espaciado entre botones */
+            margin-top: 20px; /* Da espacio antes de los botones */
         }
 
         .category-buttons a {
@@ -94,6 +104,7 @@
             background-color: #333;
             color: white;
             text-align: center;
+            margin-top: auto; /* Empuja el footer al fondo de la página */
         }
     </style>
 </head>
@@ -104,16 +115,16 @@
         <h1>Decoración Minimalista</h1>
     </header>
 
-    <!-- Botones de Navegación -->
-    <div class="buttons">
-        <a href="../">Menú Principal</a>
-        <a href="javascript:history.back()">Atrás</a>
-    </div>
+    <!-- Contenido Principal -->
+    <div class="content">
+        <!-- Título de Selección -->
+        <h2>Selecciona una Categoría</h2>
 
-    <!-- Botones de Adornos y Jardinería (uno sobre otro) -->
-    <div class="category-buttons">
-        <a href="./ornaments/">Adornos Minimalistas</a>
-        <a href="./planters/">Jardinería Minimalista</a>
+        <!-- Botones de Adornos y Jardinería (uno sobre otro) -->
+        <div class="category-buttons">
+            <a href="./ornaments/">Adornos Minimalistas</a>
+            <a href="./planters/">Jardinería Minimalista</a>
+        </div>
     </div>
 
     <!-- Pie de página -->
