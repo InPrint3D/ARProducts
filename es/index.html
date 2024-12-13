@@ -18,27 +18,27 @@
         }
 
         header {
-            background: linear-gradient(135deg, #6200ee, #4500b3); /* Fondo con gradiente */
+            background-color: #333; /* Cinta negra */
             color: white;
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 10px 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        header img {
+        #logo-container {
+            background: linear-gradient(135deg, #6200ee, #4500b3); /* Gradiente para el logo */
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        #logo-container img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             background-color: white;
             padding: 10px;
-            margin-bottom: 10px; /* Espacio entre logo y título */
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
         }
 
         .category-buttons {
@@ -67,10 +67,10 @@
         }
 
         #language-switch {
-            margin-top: auto; /* Empuja el botón hacia el fondo */
+            margin-top: auto;
             background-color: #f4f4f4;
             text-align: center;
-            padding-bottom: 20px; /* Espacio entre el botón y el footer */
+            padding-bottom: 20px;
         }
 
         #language-switch a {
@@ -99,11 +99,15 @@
     </style>
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- Cinta Negra para el Título -->
     <header>
-        <img src="./menu/logo.png" alt="Logo de la empresa">
-        <h1>Catálogo de Productos</h1>
+        Catálogo de Productos
     </header>
+
+    <!-- Logo Centrado -->
+    <div id="logo-container">
+        <img src="./menu/logo.png" alt="Logo de la empresa">
+    </div>
 
     <!-- Botones para Categorías -->
     <div class="category-buttons">
@@ -123,3 +127,4 @@
     </footer>
 </body>
 </html>
+
