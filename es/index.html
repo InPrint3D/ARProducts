@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos</title>
     <style>
-        /* Estilos generales */
+        /* Estructura de la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Asegura que la página ocupe toda la pantalla */
         }
 
         h1 {
@@ -28,6 +27,10 @@
         #logo {
             margin: 20px auto;
             max-width: 150px; /* Tamaño del logo */
+        }
+
+        .content {
+            flex: 1; /* Hace que esta sección ocupe todo el espacio disponible */
         }
 
         .category-buttons {
@@ -56,8 +59,10 @@
         }
 
         #language-switch {
-            margin: 20px 0;
+            margin-top: auto; /* Empuja el botón hacia el fondo */
             background-color: #f4f4f4;
+            text-align: center;
+            padding-bottom: 20px; /* Espacio adicional antes del footer */
         }
 
         #language-switch a {
@@ -80,22 +85,25 @@
             padding: 10px;
             background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            margin-top: auto; /* Empuja el footer hacia el fondo */
         }
     </style>
 </head>
 <body>
     <h1>Catálogo de Productos</h1>
+    
     <!-- Logo -->
     <img id="logo" src="./menu/logo.png" alt="Logo de la empresa">
-    
-    <!-- Botones para Categorías -->
-    <div class="category-buttons">
-        <a href="./interior-lighting/">Iluminación Interior</a>
-        <a href="./seasonal/">De Temporada</a>
-        <a href="./minimalist-decor/">Decoración Minimalista</a>
+
+    <!-- Contenido Principal -->
+    <div class="content">
+        <!-- Botones para Categorías -->
+        <div class="category-buttons">
+            <a href="./interior-lighting/">Iluminación Interior</a>
+            <a href="./seasonal/">De Temporada</a>
+            <a href="./minimalist-decor/">Decoración Minimalista</a>
+        </div>
     </div>
 
     <!-- Botón para Cambiar de Idioma -->
@@ -103,6 +111,7 @@
         <a href="../en/">Switch to English</a>
     </div>
 
+    <!-- Pie de página -->
     <footer>
         <p>© 2024 InPrint3D. Todos los derechos reservados.</p>
     </footer>
