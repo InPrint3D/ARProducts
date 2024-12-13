@@ -12,6 +12,9 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
         }
 
         header {
@@ -30,7 +33,7 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: white; /* Fondo blanco circular */
+            background-color: white; 
             padding: 5px;
         }
 
@@ -52,7 +55,7 @@
         .buttons a {
             text-decoration: none;
             color: white;
-            background-color: #ff5722; /* Color distintivo */
+            background-color: #ff5722; 
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 16px;
@@ -61,6 +64,11 @@
 
         .buttons a:hover {
             background-color: #e64a19;
+        }
+
+        .content {
+            flex: 1; 
+            padding: 20px 0; 
         }
 
         h2 {
@@ -75,26 +83,25 @@
         }
 
         li {
-            margin: 10px 0; /* Espaciado de 10px entre los productos */
+            margin: 10px 0; 
         }
 
         ul a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
-            padding: 10px 20px; /* Espaciado interno igual al ejemplo */
+            padding: 10px 20px; 
             border-radius: 5px;
             font-size: 18px;
-            width: 200px; /* Ancho del botón */
+            width: 200px; 
             display: inline-block;
             text-align: center;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        /* Efecto hover SOLO para los botones de productos */
         ul a:hover {
             background-color: #4500b3;
-            transform: scale(1.05); /* Agranda el botón un 5% */
+            transform: scale(1.05); 
         }
 
         footer {
@@ -102,6 +109,7 @@
             background-color: #333;
             color: white;
             text-align: center;
+            margin-top: auto; 
         }
     </style>
 </head>
@@ -118,12 +126,15 @@
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Productos -->
-    <h2>Productos</h2>
-    <ul>
-        <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
-        <li><a href="./hexlampblack/">Lámpara Hexagonal</a></li> <!-- Nuevo producto con título en español -->
-    </ul>
+    <!-- Contenido Principal -->
+    <div class="content">
+        <!-- Productos -->
+        <h2>Productos</h2>
+        <ul>
+            <li><a href="./slattedlampblack/">Lámpara Enrejada</a></li>
+            <li><a href="./hexlampblack/">Lámpara Hexagonal</a></li> 
+        </ul>
+    </div>
 
     <!-- Pie de página -->
     <footer>
