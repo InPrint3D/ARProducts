@@ -64,12 +64,13 @@
         }
 
         .content {
-            flex: 1; /* Hace que esta parte ocupe el espacio disponible */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Alinea el contenido verticalmente */
-            align-items: center;
+            flex: 1; 
+            padding: 20px 0; /* Se agregó padding para separar el contenido de la parte superior */
+        }
+
+        h2 {
             text-align: center;
+            margin: 20px 0; 
         }
 
         .category-buttons {
@@ -114,6 +115,12 @@
         <img src="../menu/logo.png" alt="Logo de la empresa">
         <h1>Decoración Minimalista</h1>
     </header>
+
+    <!-- Botones de Navegación -->
+    <div class="buttons">
+        <a href="../">Menú Principal</a>
+        <a href="javascript:history.back()">Atrás</a>
+    </div>
 
     <!-- Contenido Principal -->
     <div class="content">
