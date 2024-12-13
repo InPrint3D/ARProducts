@@ -62,15 +62,12 @@
             background-color: #e64a19;
         }
 
-        h2 {
-            text-align: center;
-            margin: 20px 0;
-        }
-
         .category-buttons {
-            list-style: none;
-            padding: 0;
-            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Alineación vertical */
+            align-items: center;
+            gap: 10px; /* Espaciado entre botones */
         }
 
         .category-buttons a {
@@ -82,12 +79,11 @@
             font-size: 18px;
             width: 220px;
             display: inline-block;
-            margin: 10px 0;
             text-align: center;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        /* Efecto hover para los botones de categoría */
+        /* Efecto hover para los botones */
         .category-buttons a:hover {
             background-color: #4500b3;
             transform: scale(1.05); /* Agranda el botón un 5% */
@@ -114,8 +110,7 @@
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Subcategorías -->
-    <h2>Subcategorías</h2>
+    <!-- Botones de Adornos y Jardinería (uno sobre otro) -->
     <div class="category-buttons">
         <a href="./ornaments/">Adornos Minimalistas</a>
         <a href="./planters/">Jardinería Minimalista</a>
