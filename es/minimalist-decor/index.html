@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoración Minimalista</title>
     <style>
-        /* Estilo General */
+        /* Estructura de la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +14,7 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Asegura que la página ocupe toda la pantalla */
+            min-height: 100vh; 
         }
 
         header {
@@ -65,7 +65,7 @@
 
         .content {
             flex: 1; 
-            padding: 20px 0; /* Se agregó padding para separar el contenido de la parte superior */
+            padding: 20px 0; 
         }
 
         h2 {
@@ -75,10 +75,10 @@
 
         .category-buttons {
             display: flex;
-            flex-direction: column; /* Alineación vertical */
+            flex-direction: column;
             align-items: center;
-            gap: 10px; /* Espaciado entre botones */
-            margin-top: 20px; /* Da espacio antes de los botones */
+            gap: 10px; 
+            margin-top: 20px; 
         }
 
         .category-buttons a {
@@ -94,10 +94,9 @@
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        /* Efecto hover para los botones */
         .category-buttons a:hover {
             background-color: #4500b3;
-            transform: scale(1.05); /* Agranda el botón un 5% */
+            transform: scale(1.05); 
         }
 
         footer {
@@ -105,7 +104,7 @@
             background-color: #333;
             color: white;
             text-align: center;
-            margin-top: auto; /* Empuja el footer al fondo de la página */
+            margin-top: auto; 
         }
     </style>
 </head>
@@ -124,13 +123,12 @@
 
     <!-- Contenido Principal -->
     <div class="content">
-        <!-- Título de Selección -->
         <h2>Selecciona una Categoría</h2>
 
-        <!-- Botones de Adornos y Jardinería (uno sobre otro) -->
+        <!-- Botones de Categorías -->
         <div class="category-buttons">
-            <a href="./ornaments/">Adornos Minimalistas</a> <!-- Aquí enlaza al segundo index -->
-            <a href="./planters/">Jardinería Minimalista</a>
+            <a href="./ornaments/">Adornos Minimalistas</a> <!-- Apunta a /ornaments/ -->
+            <a href="./planters/">Jardinería Minimalista</a> <!-- Apunta a /planters/ -->
         </div>
     </div>
 
