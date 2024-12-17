@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decoración Minimalista</title>
+    <title>Adornos Minimalistas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
         }
 
         header {
@@ -20,9 +23,6 @@
             background-color: #6200ee;
             color: white;
             padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         header img {
@@ -62,6 +62,11 @@
             background-color: #e64a19;
         }
 
+        .content {
+            flex: 1; 
+            padding: 20px 0; 
+        }
+
         h2 {
             text-align: center;
             margin: 20px 0;
@@ -74,26 +79,25 @@
         }
 
         li {
-            margin: 10px 0; /* Espaciado entre los productos */
+            margin: 10px 0;
         }
 
         ul a {
             text-decoration: none;
             color: white;
             background-color: #6200ee;
-            padding: 10px 20px; /* Ajuste de padding del botón */
+            padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
-            width: 200px; /* Ancho fijo del botón */
-            display: inline-block; /* Asegura que el ancho se respete */
+            width: 200px;
+            display: inline-block;
             text-align: center;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        /* Efecto hover SOLO para los botones de productos */
         ul a:hover {
             background-color: #4500b3;
-            transform: scale(1.05); /* Agranda el botón un 5% */
+            transform: scale(1.05); 
         }
 
         footer {
@@ -101,28 +105,30 @@
             background-color: #333;
             color: white;
             text-align: center;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <img src="../menu/logo.png" alt="Logo de la empresa">
-        <h1>Decoración Minimalista</h1>
+        <img src="../../menu/logo.png" alt="Logo de la empresa">
+        <h1>Adornos Minimalistas</h1>
     </header>
 
     <!-- Botones de Navegación -->
     <div class="buttons">
-        <a href="../">Menú Principal</a>
+        <a href="../../">Menú Principal</a> 
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Productos -->
-    <h2>Productos</h2>
-    <ul>
-        <li><a href="./skull/">Calavera Minimalista</a></li>
-        <!-- Agrega más productos aquí -->
-    </ul>
+    <!-- Contenido Principal -->
+    <div class="content">
+        <h2>Productos</h2>
+        <ul>
+            <li><a href="./skull/">Calavera Minimalista</a></li>
+        </ul>
+    </div>
 
     <!-- Pie de página -->
     <footer>
