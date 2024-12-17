@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardinería Minimalista</title>
     <style>
+        /* Estructura de la página */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que la página ocupe toda la pantalla */
         }
 
         header {
@@ -20,9 +24,6 @@
             background-color: #6200ee;
             color: white;
             padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         header img {
@@ -62,6 +63,11 @@
             background-color: #e64a19;
         }
 
+        .content {
+            flex: 1; 
+            padding: 20px 0; 
+        }
+
         h2 {
             text-align: center;
             margin: 20px 0;
@@ -85,7 +91,7 @@
             border-radius: 5px;
             font-size: 18px;
             width: 200px; /* Ancho fijo del botón */
-            display: inline-block; /* Asegura que el ancho se respete */
+            display: inline-block; 
             text-align: center;
             transition: background-color 0.3s, transform 0.2s;
         }
@@ -93,7 +99,7 @@
         /* Efecto hover SOLO para los botones de productos */
         ul a:hover {
             background-color: #4500b3;
-            transform: scale(1.05); /* Agranda el botón un 5% */
+            transform: scale(1.05); 
         }
 
         footer {
@@ -101,6 +107,7 @@
             background-color: #333;
             color: white;
             text-align: center;
+            margin-top: auto; /* Empuja el footer hacia el fondo */
         }
     </style>
 </head>
@@ -113,16 +120,17 @@
 
     <!-- Botones de Navegación -->
     <div class="buttons">
-        <a href="../">Menú Principal</a>
+        <a href="../../">Menú Principal</a> <!-- Corregido para apuntar directamente al menú principal -->
         <a href="javascript:history.back()">Atrás</a>
     </div>
 
-    <!-- Productos -->
-    <h2>Productos</h2>
-    <ul>
-        <li><a href="./skull/">Maceta Con Surcos</a></li>
-        <!-- Agrega más productos aquí -->
-    </ul>
+    <!-- Contenido Principal -->
+    <div class="content">
+        <h2>Productos</h2>
+        <ul>
+            <li><a href="./grooved-planter/">Maceta con Surcos</a></li> <!-- Corregido para apuntar a la carpeta correcta -->
+        </ul>
+    </div>
 
     <!-- Pie de página -->
     <footer>
