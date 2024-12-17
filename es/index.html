@@ -17,17 +17,9 @@
             min-height: 100vh;
         }
 
-        header {
-            background-color: #333; /* Cinta negra */
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
+        /* Contenedor del Logo */
         #logo-container {
-            background: linear-gradient(135deg, #6200ee, #4500b3); /* Gradiente para el logo */
+            background: linear-gradient(135deg, #6200ee, #4500b3);
             display: flex;
             justify-content: center;
             padding: 20px 0;
@@ -41,12 +33,23 @@
             padding: 10px;
         }
 
+        /* Franja Negra con el Título */
+        #title-bar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Botones de Categorías (se quedan donde están) */
         .category-buttons {
             margin: 20px 0;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            align-items: center;
+            align-items: center; /* Se mantienen al centro */
         }
 
         .category-buttons a {
@@ -66,11 +69,11 @@
             transform: scale(1.05);
         }
 
+        /* Botón Switch to English */
         #language-switch {
-            margin-top: auto;
-            background-color: #f4f4f4;
+            margin-top: auto; /* Se empuja hasta el fondo */
             text-align: center;
-            padding-bottom: 20px;
+            padding: 20px 0;
         }
 
         #language-switch a {
@@ -89,34 +92,34 @@
             color: white;
         }
 
+        /* Pie de página */
         footer {
             padding: 10px;
             background-color: #333;
             color: white;
             text-align: center;
-            margin-top: auto; 
         }
     </style>
 </head>
 <body>
-    <!-- Cinta Negra para el Título -->
-    <header>
-        Catálogo de Productos
-    </header>
-
     <!-- Logo Centrado -->
     <div id="logo-container">
         <img src="./menu/logo.png" alt="Logo de la empresa">
     </div>
 
-    <!-- Botones para Categorías -->
+    <!-- Franja Negra con el Título -->
+    <div id="title-bar">
+        Catálogo de Productos
+    </div>
+
+    <!-- Botones para Categorías (centrados, sin cambios) -->
     <div class="category-buttons">
         <a href="./interior-lighting/">Iluminación Interior</a>
         <a href="./seasonal/">De Temporada</a>
         <a href="./minimalist-decor/">Decoración Minimalista</a>
     </div>
 
-    <!-- Botón para Cambiar de Idioma -->
+    <!-- Botón Switch to English justo arriba del footer -->
     <div id="language-switch">
         <a href="../en/">Switch to English</a>
     </div>
@@ -127,4 +130,3 @@
     </footer>
 </body>
 </html>
-
